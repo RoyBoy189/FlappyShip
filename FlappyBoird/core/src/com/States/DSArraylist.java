@@ -93,6 +93,7 @@ public class DSArraylist<T> implements DSlist<T>, Iterable<T> {
         if(i < list.length){
             return list[i];
         }
+        
 
         throw new IndexOutOfBoundsException("" + i);
     }
