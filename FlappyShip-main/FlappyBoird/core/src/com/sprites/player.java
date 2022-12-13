@@ -6,9 +6,9 @@ import com.badlogic.gdx.math.Vector3;
 public class player {
     private static int gravity = -15;
     private static int move = 100; //helps the player stay on the camera as the walls move.
-    private Vector3 position; // holds x and y position
+    public static Vector3 position; // holds x and y position
     private Vector3 velocity;
-
+    public  player curplayer;
     private Texture bird;
 
     public player(int x, int y) {
@@ -27,7 +27,7 @@ public class player {
     public static int getGravity() {
         return gravity;
     }
-    public Vector3 getPosition() {
+    public static Vector3 getPosition() {
         return position;
     }
     public Vector3 getVelocity() {
